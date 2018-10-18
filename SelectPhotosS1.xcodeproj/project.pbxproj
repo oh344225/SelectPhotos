@@ -12,6 +12,7 @@
 		4A4D00961FF250FE00D3A71F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D00941FF250FE00D3A71F /* Main.storyboard */; };
 		4A4D00981FF250FE00D3A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D00971FF250FE00D3A71F /* Assets.xcassets */; };
 		4A4D009B1FF250FE00D3A71F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D00991FF250FE00D3A71F /* LaunchScreen.storyboard */; };
+		4AE1BA4420E211AB006CB091 /* nophoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1BA4320E211AB006CB091 /* nophoto.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		4A4D00971FF250FE00D3A71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A4D009A1FF250FE00D3A71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A4D009C1FF250FE00D3A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE1BA4320E211AB006CB091 /* nophoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nophoto.png; sourceTree = "<group>"; };
+		4AEDC1AC214A5F4000D863F9 /* SelectPhotosS1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SelectPhotosS1.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 			children = (
 				4A4D008F1FF250FE00D3A71F /* SelectPhotosS1 */,
 				4A4D008E1FF250FE00D3A71F /* Products */,
+				4AEDC1AD214A5F4100D863F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +58,23 @@
 		4A4D008F1FF250FE00D3A71F /* SelectPhotosS1 */ = {
 			isa = PBXGroup;
 			children = (
+				4AEDC1AC214A5F4000D863F9 /* SelectPhotosS1.entitlements */,
 				4A4D00901FF250FE00D3A71F /* AppDelegate.swift */,
 				4A4D00921FF250FE00D3A71F /* ViewController.swift */,
+				4AE1BA4320E211AB006CB091 /* nophoto.png */,
 				4A4D00941FF250FE00D3A71F /* Main.storyboard */,
 				4A4D00971FF250FE00D3A71F /* Assets.xcassets */,
 				4A4D00991FF250FE00D3A71F /* LaunchScreen.storyboard */,
 				4A4D009C1FF250FE00D3A71F /* Info.plist */,
 			);
 			path = SelectPhotosS1;
+			sourceTree = "<group>";
+		};
+		4AEDC1AD214A5F4100D863F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +110,17 @@
 					4A4D008C1FF250FE00D3A71F = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -124,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A4D009B1FF250FE00D3A71F /* LaunchScreen.storyboard in Resources */,
+				4AE1BA4420E211AB006CB091 /* nophoto.png in Resources */,
 				4A4D00981FF250FE00D3A71F /* Assets.xcassets in Resources */,
 				4A4D00961FF250FE00D3A71F /* Main.storyboard in Resources */,
 			);
@@ -274,12 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MG3AY267XT;
+				DEVELOPMENT_TEAM = 6Y3S6RLA4Y;
 				INFOPLIST_FILE = SelectPhotosS1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = oh.SelectPhotosS1;
+				PRODUCT_BUNDLE_IDENTIFIER = "n-o-v.SelectPhotosS1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +316,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MG3AY267XT;
+				DEVELOPMENT_TEAM = 6Y3S6RLA4Y;
 				INFOPLIST_FILE = SelectPhotosS1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = oh.SelectPhotosS1;
+				PRODUCT_BUNDLE_IDENTIFIER = "n-o-v.SelectPhotosS1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
